@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استمارة تسجيل الطلبة</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>استمارة تسجيل الطلبة في الكلية</h1>
+    <form id="registrationForm">
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">رقم الهاتف:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="dob">تاريخ الميلاد:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label for="department">القسم:</label>
+        <select id="department" name="department" required>
+            <option value="علوم الحاسب">علوم الحاسب</option>
+            <option value="الهندسة">الهندسة</option>
+            <option value="الطب">الطب</option>
+            <option value="الأداب">الأداب</option>
+        </select><br><br>
+        
+        <button type="button" onclick="submitForm()">تسجيل</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
